@@ -1,4 +1,4 @@
-package com.example.apparquitectura
+package com.example.apparquitectura.view
 
 import android.content.Intent
 import android.net.Uri
@@ -7,12 +7,14 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.apparquitectura.model.Coupon
+import com.example.apparquitectura.R
 import com.squareup.picasso.Picasso
 import de.hdodenhof.circleimageview.CircleImageView
 
 class CouponDetailActivity : AppCompatActivity() {
 
-    private var couponSelected:Coupon? = null
+    private var couponSelected: Coupon? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
