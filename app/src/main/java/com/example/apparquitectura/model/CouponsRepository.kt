@@ -1,6 +1,9 @@
 package com.example.apparquitectura.model
 
+import androidx.lifecycle.MutableLiveData
+
 interface CouponsRepository {
 
-    fun getCouponAPI()
+    fun getCoupon(): MutableLiveData<List<Coupon>>
+    fun callCouponAPI()
 }
